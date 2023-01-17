@@ -26,12 +26,12 @@ A signal is a standardized notification message used in Unix and POSIX-compliant
 
 ## 📌 Useful Links
 * [Signals](https://www.codequoi.com/en/sending-and-intercepting-a-signal-in-c/)
-* [Creating and Killing Child Processes in C] (https://www.codequoi.com/en/creating-and-killing-child-processes-in-c/)
+* [Creating and Killing Child Processes in C](https://www.codequoi.com/en/creating-and-killing-child-processes-in-c/)
 * [unix - unix / signals-trap](https://tutorialspoint.com/unix/unix-signals-traps.htm)
 * [Introduction To Unix Signals Programming](http://www.cs.kent.edu/~ruttan/sysprog/lectures/signals.html)
 * [signals C language](https://www.geeksforgeeks.org/signals-c-language/)
 * [Unix / Linux - Processes Management](https://tutorialspoint.com/unix/unix-processes.htm)
-* [Signal() - Function](C library function - signal())
+* [Signal() - Function](https://www.tutorialspoint.com/c_standard_library/c_function_signal.htm)
 
  ## Autor
 Made by Hicham Amaarour👋 [See my linkedin](https://www.linkedin.com/in/hicham-amaarour-5a1b84220/)
