@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_hex.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hamaarou <hamaarou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 15:01:45 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/11/02 15:13:05 by hamaarou         ###   ########.fr       */
+/*   Updated: 2023/01/17 17:46:28 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
-#include <stdio.h>
+#include "../minitalk.h"
 
 int	ft_putnbr_hex(unsigned long nbr, char bs)
 {

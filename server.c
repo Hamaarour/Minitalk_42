@@ -6,15 +6,11 @@
 /*   By: hamaarou <hamaarou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/15 15:55:38 by hamaarou          #+#    #+#             */
-/*   Updated: 2023/01/17 16:41:45 by hamaarou         ###   ########.fr       */
+/*   Updated: 2023/01/18 14:54:43 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
-#include <signal.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
 
 void	get_bit(int sig)
 {
@@ -26,7 +22,7 @@ void	get_bit(int sig)
 		j = 0;
 	else
 		j = 1;
-	res = (int)res * 2 + j;
+	res = res * 2 + j;
 	bit++;
 	if (bit == 8)
 	{
@@ -42,12 +38,12 @@ int	main(int argc, char *argv[])
 	(void)argv;
 	if (argc != 1)
 	{
-		printf("wrong argiment.\n");
+		ft_printf("wrong argiment.\n");
 		return (0);
 	}
 	pid = getpid();
-	printf("PID => %d\n", pid);
-	printf("Waiting  a message...\n");
+	ft_printf("PID => %d\n", pid);
+	ft_printf("Waiting  a message...\n");
 	while (argc == 1)
 	{
 		signal(SIGUSR1, get_bit);

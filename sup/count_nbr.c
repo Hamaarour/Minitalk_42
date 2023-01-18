@@ -1,27 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   count_nbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hamaarou <hamaarou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/30 17:55:43 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/11/02 10:50:59 by hamaarou         ###   ########.fr       */
+/*   Created: 2022/10/31 13:53:42 by hamaarou          #+#    #+#             */
+/*   Updated: 2023/01/17 17:46:04 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../minitalk.h"
 
-int	ft_putstr(char *str)
+int	count_nbr(unsigned long nbr, int bs, int sign)
 {
-	int		i;
-	char	*n;
+	int	count;
 
-	n = "(null)";
-	i = 0;
-	if (!str)
-		return (ft_putstr(n));
-	while (str[i])
-		write(1, &str[i++], 1);
-	return (ft_strlen(str));
+	count = 0;
+	if (nbr == 0)
+		return (1);
+	while (nbr != 0)
+	{
+		nbr /= bs;
+		count++;
+	}
+	if (sign == -1)
+		count++;
+	return (count);
 }

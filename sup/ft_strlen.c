@@ -1,25 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hamaarou <hamaarou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/15 14:04:20 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/10/17 17:55:45 by hamaarou         ###   ########.fr       */
+/*   Created: 2022/10/31 13:35:50 by hamaarou          #+#    #+#             */
+/*   Updated: 2023/01/17 17:46:37 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <unistd.h>
+#include "../minitalk.h"
 
-void	ft_putstr_fd(char *s, int fd)
+size_t	ft_strlen(char *str)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	if (s == NULL)
-		return ;
-	while (s[i])
-		write(fd, &s[i++], 1);
+	while (str[i])
+		i++;
+	return (i);
 }
