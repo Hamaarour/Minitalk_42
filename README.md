@@ -1,4 +1,4 @@
-<h1 align="center"> Minitalk </h1>
+![cover](https://github.com/Hamaarour/Minitalk_42/blob/main/minitalk_cover.png)
      
 ```
                      ███╗░░░███╗██╗███╗░░██╗██╗████████╗░█████╗░██╗░░░░░██╗░░██╗
